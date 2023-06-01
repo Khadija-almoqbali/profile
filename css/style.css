@@ -1,0 +1,160 @@
+  body{
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #F5E9CF;
+    font-family: Roboto, Arial;
+  }
+.circle{
+    height: 700px;
+    width: 100%;
+    margin-top: -300px;
+    background-color: #4D455D;
+    position: relative;
+}
+.flex-container{
+    position: absolute;
+    display: flex;
+    right: 20%;
+    left: 20%;
+    bottom: 0px;
+    align-items: center;
+}
+.img-profile{
+    height: 470px;
+}
+
+.hello{
+    font-family: Roboto, Arial;
+    color: #F5E9CF;
+    font-size: 55px;
+    
+    
+}
+.name{
+    font-family: Roboto, Arial;
+    color: #F5E9CF;
+    font-size: 25px;
+    margin-top: -50px;
+    margin-left: 30px;
+}
+.accounts{
+    display: flex;
+    gap:15px;
+    position: absolute;
+    bottom: 70px;
+    right: 30%;
+    left: 28%;
+}
+.icon{
+    height: 26px;
+}
+
+.container2{
+    width: 100%;
+    margin-top: -70px;
+}
+.text{
+    text-align: center;
+    padding-top: 70px;
+    color: #4D455D;
+    font-size: 30px;
+    font-family: Roboto, Arial;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #4D455D;
+}
+.instaccount{
+    color: #F5E9CF;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Roboto, Arial;
+    font-size: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:50px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 60px;
+}
+.grid-item{
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #7DB9B6;
+    
+}
+@media(max-width:680px){
+    .circle{
+        margin-top: -250px;
+    }
+    .footer{
+        margin: 0px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .hello{
+        font-size: 30px;
+        
+    }
+    .name{
+        font-size: 17px;
+        padding-top: 20px;
+        margin-right: 38px;
+        padding-bottom: 10px;
+        
+    }
+    .img-profile{
+        z-index: 1;
+        height: 320px;
+    }
+    .flex-container{
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 20px;
+    }
+    .accounts{
+        bottom: 320px;
+        right: 35%;
+        left: 40%;
+    }
+    .icon{
+        height: 20px;
+    }
+    .container2{
+        margin: 0px;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    }
+    @media only screen 
+    and (min-device-width : 680px) 
+    and (max-device-width : 1024px) 
+    and (orientation : landscape) {
+        .grid-container{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+  @media (min-width: 1400px){
+    .flex-container{
+        gap:400px;
+    }
+    .accounts{
+        right: 70%;
+        left: 25%;
+    }
+  }
